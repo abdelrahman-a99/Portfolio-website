@@ -1,0 +1,510 @@
+/* start of global rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* end of global rules */
+
+/* start components */
+.special-heading {
+    color: #ebeced;
+    font-size: 100px;
+    text-align: center;
+    font-weight: 800;
+    margin: 4px;
+}
+
+.special-heading+p {
+    margin: -25px 0px 0px 0px;
+    font-size: 20px;
+    text-align: center;
+    color: #797979;
+}
+
+@media (max-width: 767px) {
+    .special-heading {
+        font-size: 60px;
+    }
+
+    .special-heading+p {
+        margin-top: -15px;
+    }
+}
+
+/* end components */
+
+/* start header */
+header {
+    padding: 20px;
+    background-color: #f6f6f6;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo-alt {
+    width: 30px;
+}
+
+header .links {
+    position: relative;
+}
+
+header .links:hover .icon span:nth-child(2) {
+    width: 100%;
+    transition: .3s;
+}
+
+header .links .icon {
+    width: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+header .links .icon span {
+    background-color: #333;
+    margin-bottom: 5px;
+    height: 2px;
+}
+
+header .links .icon span:first-child {
+    width: 100%;
+}
+
+header .links .icon span:nth-child(2) {
+    width: 60%;
+}
+
+header .links .icon span:last-child {
+    width: 100%;
+}
+
+header .links ul {
+    border-radius: 5%;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    background-color: #f6f6f6;
+    position: absolute;
+    right: 0px;
+    min-width: 200px;
+    top: calc(100% + 15px);
+    display: none;
+    z-index: 1;
+}
+
+header .links ul::before {
+    content: "";
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #f6f6f6 transparent;
+    position: absolute;
+    right: 8px;
+    top: -18px;
+    /* i edited in the dimensions because i used border-readius: 5%; */
+}
+
+header .links:hover ul {
+    display: block;
+}
+
+header .links ul li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #333;
+    transition: .3s;
+}
+
+header .links ul li a:hover {
+    padding-left: 25px;
+}
+
+header .links ul li:not(:last-child) a {
+    border-bottom: 1px solid #ddd;
+}
+
+/* end header */
+
+/* start landing section */
+/* .landing{
+    background-image: url(#);
+    background-size: cover;
+    height: calc(100vh - 64px);
+} */
+/* there is no url now */
+
+/* position: relative; */
+/* if you want to make the text in the middle of the image */
+
+/* .landing .image{
+    max-width: 100%;
+    height: auto;
+    background-size: cover;
+    position: relative;
+} */
+/* the image not fit the page */
+
+.landing {
+    /* background-color: brown; */
+    /* background-color: #f6f6f6; */
+    height: calc(100vh - 65.11px);
+}
+
+.landing .intro-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.landing .intro-text h1 {
+    margin: 0px;
+    font-weight: bold;
+    font-size: 50px;
+    color: #10cab7;
+}
+
+.landing .intro-text p {
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: center;
+    width: 320px;
+    min-width: 100%;
+}
+
+/* end landing section */
+
+/* start features */
+.features {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #f6f6f6;
+}
+
+.features .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 30px;
+}
+
+.features .container .feat {
+    padding: 20px;
+    text-align: center;
+}
+
+/* .features .container .feat .logo-one{
+    fill: greenyellow;
+    color: red;
+    background-color: blueviolet;
+} */
+/* this is not work ( the icon does not color ) */
+
+.features .container .feat h3 {
+    font-weight: 800;
+    margin: 30px 0;
+}
+
+.features .container .feat p {
+    line-height: 1.8;
+    color: #777;
+    font-size: 17px;
+}
+
+/* end features */
+
+/* start services */
+/* .special-heading{
+    color: #ebeced;
+    font-size: 100px;
+    text-align: center;
+    font-weight: 800px;
+    margin: 0px;
+} */
+/* i will take it and add it in the top of the leon.css_file because the code will repeat soon in all next pages */
+
+.services {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+}
+
+.services .services-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(361px, 1fr));
+    grid-gap: 30px;
+    margin-top: 100px;
+}
+
+/* this is an error here , i do not know why should i add in minmax */
+/* it is make one of the devices (phones or big screens) to clash */
+
+.services .services-content .col .service {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+/* i have a problem with flex */
+
+/* @media (max-width: 767px) {
+    .services .services-content .col .service {
+        flex-direction: column;
+        text-align: center;
+    }
+} */
+/* when i add this code the icons start at the first of page ,, not at the middle with title and text */
+
+.services .services-content .col .service .i {
+    flex: none;
+    flex-basis: 30px;
+    width: 30px;
+    height: 30px;
+    margin-top: -4px;
+    margin-right: 5px;
+}
+
+.services .services-content .col .service .text {
+    flex: 1;
+    text-align: center;
+}
+
+.services .services-content .col .service .text h3 {
+    margin: 0px 0px 20px;
+}
+
+.services .services-content .col .service .text p {
+    color: #333;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+/* end services */
+
+/* start portfolio */
+.portfolio {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #f6f6f6;
+}
+
+.portfolio .portfolio-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 30px;
+    margin-top: 100px;
+}
+
+.portfolio .portfolio-content .card {
+    background-color: white;
+}
+
+.portfolio .portfolio-content .card img {
+    max-width: 100%;
+}
+
+.portfolio .portfolio-content .card .info {
+    padding: 20px;
+}
+
+.portfolio .portfolio-content .card .info h3 {
+    margin: 0px;
+}
+
+.portfolio .portfolio-content .card .info p {
+    color: #777;
+    line-height: 1.8;
+    margin-bottom: 0px;
+}
+
+@media (max-width: 767px) {
+    .portfolio .portfolio-content .card .info {
+        text-align: center;
+    }
+}
+
+/* end portfolio */
+
+/* start about */
+.about {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.about .about-content {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@media (max-width: 991px) {
+    .about .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.about .about-content img {
+    width: 250px;
+    height: 300px;
+}
+
+@media (max-width: 991px) {
+    .about .about-content img {
+        margin: 0 auto 60px;
+    }
+}
+
+.about .about-content .text {
+    flex-basis: calc(100% - 300px);
+}
+
+.about .about-content .text p:first-of-type {
+    font-weight: bold;
+    line-height: 2;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.about .about-content .text hr {
+    width: 50%;
+    display: inline-block;
+    border-color: #10cab7;
+}
+
+.about .about-content .text p:last-of-type {
+    font-weight: bold;
+    line-height: 2;
+    margin-top: 30px;
+    color: #777;
+}
+
+/* end about */
+
+/* start contact */
+.contact {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #f6f6f6;
+}
+
+.contact .info {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+.contact .info .label {
+    font-size: 40px;
+    font-weight: 800;
+    color: darkblue;
+    letter-spacing: -2px;
+    margin-bottom: 15px;
+}
+
+.contact .info .link {
+    display: block;
+    font-size: 35px;
+    font-weight: 800;
+    color: #10cab7;
+    text-decoration: none;
+}
+
+.contact .info .social {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 22px;
+}
+
+.contact .info .social img {
+    margin-left: 10px;
+}
+
+@media (max-width: 767px) {
+    .contact .info .label {
+        font-size: 30px;
+    }
+
+    .contact .info .link {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 515px) {
+    .contact .info .label {
+        font-size: 25px;
+    }
+
+    .contact .info .link {
+        font-size: 20px;
+    }
+
+    .contact .info .social {
+        font-size: 16px;
+    }
+}
+
+/* end contact */
+
+/* start footer */
+
+footer {
+    background-color: darkblue;
+    color: white;
+    padding: 30px 10px;
+    text-align: center;
+    font-size: 20px;
+    /* margin-right: -1px; */
+    /* margin-right 34an kan feh 5t abyad 3la elymeen */
+}
+
+footer span {
+    font-weight: bold;
+    color: #10cab7;
+}
+
+/* end footer */

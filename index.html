@@ -4,18 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Abdelrahman Ahmed</title>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="/images/pngwing.com.png" type="image/png">
+
     <meta name="description" content="Abdelrahman Ahmed's portfolio website showcasing front-end development projects.">
     <meta name="keywords" content="front-end, web development, HTML, CSS, portfolio">
+
+    <meta property="og:title" content="Abdelrahman Ahmed's Portfolio">
+    <meta property="og:description" content="Showcasing front-end development projects by Abdelrahman Ahmed.">
+    <meta property="og:image" content="/images/pngwing.com.png">
+    <meta property="og:url" content="https://your-portfolio-website-url.com">
+    <meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body>
     <header>
-        <a href="#" class="logo">Fzlka</a>
-        <nav>
+        <a href="#" class="logo" aria-label="Home">Fzlka</a>
+        <nav aria-label="Main navigation">
             <a href="#services">Services</a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
@@ -24,29 +33,28 @@
 
     <main>
         <div>
-            <h2>
+            <h1>
                 Hello, I'm Abdelrahman
                 <br>
                 <span>Front-End Developer</span>
-            </h2>
-            <h3>I build Awesome Websites</h3>
+            </h1>
+            <h2>I build Awesome Websites</h2>
             <a href="#projects" class="main-button">View Projects</a>
 
             <div class="social-icons">
-                <a href="https://www.facebook.com/profile.php?id=100007088957211" target="_blank" aria-label="Facebook"
-                    rel="noopener noreferrer">
+                <a href="https://www.facebook.com/profile.php?id=100007088957211" target="_blank" title="Facebook">
                     <i class="fa-brands fa-facebook"></i>
                 </a>
 
-                <a href="https://www.instagram.com/abd_elrhman__a/" target="_blank">
+                <a href="https://www.instagram.com/abd_elrhman__a/" target="_blank" title="Instagram">
                     <i class="fa-brands fa-instagram"></i>
                 </a>
 
-                <a href="https://github.com/abdelrahman-a99" target="_blank">
+                <a href="https://github.com/abdelrahman-a99" target="_blank" title="GitHub">
                     <i class="fa-brands fa-github"></i>
                 </a>
 
-                <a href="https://www.linkedin.com/in/abdelrahman-ahmed-9b0828252/" target="_blank">
+                <a href="https://www.linkedin.com/in/abdelrahman-ahmed-9b0828252/" target="_blank" title="LinkedIn">
                     <i class="fa-brands fa-linkedin"></i>
                 </a>
             </div>
@@ -95,45 +103,144 @@
     <section class="projects" id="projects">
         <h2 class="title">Projects</h2>
         <div class="content">
-            <article class="project-card">
+            <!-- <article class="project-card">
                 <div class="project-image">
-                    <img src="/images/portfolio.png" alt="Portfolio website">
+                    <img src="/images/portfolio.png" alt="Screenshot of Portfolio website" loading="lazy">
                 </div>
                 <div class="project-info">
-                    <p class="project-category">HTML & CSS Templates</p>
+                    <p class="project-category">HTML & CSS Template</p>
                     <strong class="project-title">
-                        <span>My Website</span>
-                        <a href="index.html" class="more-details" target="_blank">More Details</a>
-                        <!-- <a href="file:///D:/Self%20Study/Front-end/codezilla/portfolio_website/index.html" class="more-details" target="_blank">More Details</a> -->
+                        <span>Portfolio Website</span>
+                        <a href="index.html" class="more-details" target="_blank">
+                            More Details
+                        </a>
                     </strong>
                 </div>
-            </article>
+            </article> -->
 
             <article class="project-card">
                 <div class="project-image">
-                    <img src="/images/template1.png" alt="Loan website">
+                    <img src="/images/leon_website.png" alt="Screenshot of Loan website" loading="lazy">
                 </div>
                 <div class="project-info">
-                    <p class="project-category">HTML & CSS Templates</p>
+                    <p class="project-category">HTML & CSS Template</p>
                     <strong class="project-title">
                         <span>Loan Website</span>
-                        <a href="../../elzero/templates/template1_edited/index.html" class="more-details" target="_blank">More
-                            Details</a>
+                        <!-- <a href="../../elzero/templates/template1_edited/index.html/" class="more-details"
+                            target="_blank">
+                            More Details
+                        </a> -->
                         <!-- <a href="file:///D:/Self%20Study/Front-end/elzero/templates/template1_edited/index.html/" class="more-details" target="_blank">More Details</a> -->
+                        <a href="/projects/leon_website/index.html" class="more-details" target="_blank">
+                            More Details
+                        </a>
                     </strong>
                 </div>
             </article>
 
             <article class="project-card">
                 <div class="project-image">
-                    <img src="/images/design_your_home.png" alt="Design your home website">
+                    <img src="/images/taco_shop.png" alt="Screenshot of Taco Shop Website" loading="lazy">
                 </div>
                 <div class="project-info">
-                    <p class="project-category">HTML & CSS Templates</p>
+                    <p class="project-category">HTML & CSS Template</p>
+                    <strong class="project-title">
+                        <span>Taco Shop</span>
+                        <a href="/projects/taco_shop/index.html" class="more-details" target="_blank">
+                            More Details
+                        </a>
+                    </strong>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-image">
+                    <img src="/images/design_your_home.png" alt="Screenshot of Design Your Home Website" loading="lazy">
+                </div>
+                <div class="project-info">
+                    <p class="project-category">HTML & CSS Template</p>
                     <strong class="project-title">
                         <span>Design Website</span>
-                        <a href="../../elzero/templates/template1_edited/index.html" class="more-details" target="_blank">More Details</a>
-                        <!-- <a href="file:///D:/Self%20Study/Front-end/templates/design_your_home/index.html" class="more-details" target="_blank">More Details</a> -->
+                        <a href="/projects/design_your_home/index.html" class="more-details" target="_blank">
+                            More Details
+                        </a>
+                    </strong>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-image">
+                    <img src="/images/social_media_dashboard.png" alt="Screenshot of Social Media Dashboard"
+                        loading="lazy">
+                </div>
+                <div class="project-info">
+                    <p class="project-category">HTML & CSS Template</p>
+                    <strong class="project-title">
+                        <span>Social Media Dashboard</span>
+                        <a href="/projects/social-media-dashboard/index.html" class="more-details" target="_blank">
+                            More Details
+                        </a>
+                    </strong>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-image">
+                    <img src="/images/calculator.png" alt="Screenshot of Calculator App" loading="lazy">
+                </div>
+                <div class="project-info">
+                    <p class="project-category">HTML & CSS & JS Template</p>
+                    <strong class="project-title">
+                        <span>Calculator</span>
+                        <a href="/projects/calculator/index.html" class="more-details" target="_blank">
+                            More Details
+                        </a>
+                    </strong>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-image">
+                    <img src="/images/TODO_List.png" alt="Screenshot of TODO List App" loading="lazy">
+                </div>
+                <div class="project-info">
+                    <p class="project-category">HTML & CSS & JS Template</p>
+                    <strong class="project-title">
+                        <span>TODO List</span>
+                        <a href="/projects/TODO_List/index.html" class="more-details" target="_blank">
+                            More Details
+                        </a>
+                    </strong>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-image">
+                    <img src="/images/tic_tac_toe.png" alt="Screenshot of Tic Tac Toe Game" loading="lazy">
+                </div>
+                <div class="project-info">
+                    <p class="project-category">HTML & CSS & JS Template</p>
+                    <strong class="project-title">
+                        <span>Tic Tac Toe</span>
+                        <a href="/projects/tic_tac_toe/index.html" class="more-details" target="_blank">
+                            More Details
+                        </a>
+                    </strong>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-image">
+                    <img src="/images/rock_paper_scissors.png" alt="Screenshot of Rock Paper Scissors Game"
+                        loading="lazy">
+                </div>
+                <div class="project-info">
+                    <p class="project-category">HTML & CSS & JS Template</p>
+                    <strong class="project-title">
+                        <span>Rock Paper Scissors</span>
+                        <a href="/projects/rock_paper_scissors/index.html" class="more-details" target="_blank">
+                            More Details
+                        </a>
                     </strong>
                 </div>
             </article>
@@ -169,27 +276,37 @@
         </div>
     </section>
 
+    <!-- Testimonial Section -->
+    <!-- <section class="testimonial-section">
+        <p class="testimonial">Great service and support!</p>
+    </section> -->
+
+    <!-- Scroll-to-Top Button -->
+    <button class="scroll-to-top">↑</button>
+
     <footer>
-        <p class="footer-title">Copyright &copy; 2024 <span>Abdelrahman Ahmed</span></p>
+        <p class="footer-title">Copyright &copy; <span class="time"></span> <span class="name">Abdelrahman Ahmed</span>
+        </p>
         <div class="social-icons">
-            <a href="https://www.facebook.com/profile.php?id=100007088957211" target="_blank" aria-label="Facebook"
-                rel="noopener noreferrer">
+            <a href="https://www.facebook.com/profile.php?id=100007088957211" target="_blank" title="Facebook">
                 <i class="fa-brands fa-facebook"></i>
             </a>
 
-            <a href="https://www.instagram.com/abd_elrhman__a/" target="_blank">
+            <a href="https://www.instagram.com/abd_elrhman__a/" target="_blank" title="Instagram">
                 <i class="fa-brands fa-instagram"></i>
             </a>
 
-            <a href="https://github.com/abdelrahman-a99" target="_blank">
+            <a href="https://github.com/abdelrahman-a99" target="_blank" title="GitHub">
                 <i class="fa-brands fa-github"></i>
             </a>
 
-            <a href="https://www.linkedin.com/in/abdelrahman-ahmed-9b0828252/" target="_blank">
+            <a href="https://www.linkedin.com/in/abdelrahman-ahmed-9b0828252/" target="_blank" title="LinkedIn">
                 <i class="fa-brands fa-linkedin"></i>
             </a>
         </div>
     </footer>
+
+    <script src="js/app.js"></script>
 </body>
 
 </html>
